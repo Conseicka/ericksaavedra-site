@@ -1,0 +1,7 @@
+---
+deployment:
+    tasks:
+      - export DEPLOYPATH=/home/ericbhtn/public_html/
+      - /bin/cp -r assets/ $DEPLOYPATH
+      - /bin/cp -r css/ $DEPLOYPATH
+      - /bin/cp *.html $DEPLOYPATH
