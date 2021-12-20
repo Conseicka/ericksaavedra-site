@@ -163,11 +163,137 @@
     }
     .home-main-text{
       height: 200px;
+      font-size: 20px;
+      font-weight: 500px;
+      letter-spacing: 10px;
+
     }
     .hobbies-main-container {
         grid-template-columns: 1fr;
-        
+
 
     }
 
+}
+
+@media (max-width: 400px) {
+    .blogs-posts-container .post-container {
+        max-width: 95%;
+        display: inline-table;
+        transition: .5s;
+    }
+
+    footer{
+
+      min-width: 400px;
+    }
+    .profile-main-container img {
+        width: 100%;
+        transition: .5s;
+
+    }
+    .home-main-text{
+      height: 200px;
+      font-weight: 500px;
+      letter-spacing: 5px;
+    }
+    .hobbies-main-container {
+        grid-template-columns: 1fr;
+
+
+    }
+    .proyects-main-container {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 3fr;
+
+    }
+    main {
+      min-width: 400px;
+    }
+
+    header {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      height: 120px;
+      /*position: absolute;*/
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      min-width: 400px;
+    }
+
+    header .header-icons-container {
+      min-width: 400px;
+    }
+    header .header-nav-container {
+      min-width: 400px;
+      height: 70px;
+
+    }
+    body {
+      min-width: 400px;
+    }
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .blogs-posts-container .post-container {
+        max-width: 95%;
+        display: inline-table;
+        transition: .5s;
+    }
+
+    footer{
+
+      min-width: 350px;
+    }
+    .profile-main-container img {
+        width: 100%;
+        transition: .5s;
+
+    }
+
+    .hobbies-main-container {
+        grid-template-columns: 1fr;
+
+
+    }
+    main {
+      min-width: 350px;
+    }
+
+    header {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      height: 120px;
+      /*position: absolute;*/
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      min-width: 350px;
+    }
+
+    header .header-icons-container {
+      min-width: 350px;
+    }
+    header .header-nav-container {
+      min-width: 350px;
+      width: 100%;
+      height: 70px;
+      display: grid;
+    }
+
+    body {
+      min-width: 350px;
+    }
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+    }
 }
